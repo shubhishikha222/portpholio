@@ -1,0 +1,361 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background: rgb(33, 1, 33); */
+    background: rgb(34, 1, 34);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 100px;
+}
+
+hr {
+    background-color: palevioletred;
+    height: 1.2px;
+    border: 0;
+    margin: 30px auto;
+    max-width: 80vw;
+    /* margin: auto; */
+}
+.Flex{
+    display: flex;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+/* .active2{
+    color: orchid;
+    border-top: 1px dashed orchid;
+    border-bottom: 1px dashed orchid;
+    padding: 10px 0;            
+} */
+
+
+/* *****UTILITY***** */
+.Text-Pink {
+    color: palevioletred;
+}
+
+.Text-grey {
+    color: grey;
+    font-weight: 300;
+}
+
+/* *****SPECIFIED***** */
+nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    /* background-color: rgb(24, 1, 24); */
+    background-color: rgb(19, 1, 19);
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 150ms ease-in-out;
+
+}
+
+nav ul li a:hover {
+    color: orchid;
+    /* border-top: 1px ridge orchid; */
+    border-bottom: 1px ridge orchid;
+    padding: 10px 0;
+}
+
+
+.left {
+    font-size: 1.5rem;
+}
+
+.FirstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.FirstSection>div {
+    width: 30%;
+}
+
+.LeftSection {
+    font-size: 2rem;
+    /* margin: 30px 0; */
+}
+
+.RightSection img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+#element {
+    color: palevioletred;
+}
+.About-Section{
+    width: 50vw;
+    /* height: 30vh; */
+    border: 2px solid rgb(75, 32, 46);
+    border-radius: 8px;
+    text-align: justify;
+    padding: 8px 16px;
+    margin-bottom: 30px;
+}
+.SecondSection {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.SecondSection h1 {
+    font-size: 1.6rem;
+}
+
+.Edu-Bar {
+    margin: 30px 0;
+}
+
+.ThirdSection {
+    max-width: 80vw;
+    margin: auto;
+}
+.SkillsHead{
+    margin-top: 30px;
+}
+.SkillsDiv{
+    display: flex;
+    background: rgb(75, 32, 46);
+    border-radius: 12px;
+    padding: 26px;
+    margin: 30px 0;
+    justify-content: center;
+}
+.SkillsDiv ul{
+    list-style-type: none;
+    margin: 12px 100px;
+    font-size: 1.1rem;
+}
+.FourthSection{
+    max-width: 80vw;
+    margin: auto;
+}
+/* *****FILTERS***** */
+.Container ul{
+    background-color: rgb(75, 32, 46);
+    width: max-content;
+    margin: 30px auto;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-weight: 1.5rem;
+}
+.Container ul li{
+    padding: 12px 23px;
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+}
+.Container ul li:hover{
+    background-color: rgb(49, 21, 31);
+}
+.Filters li.active {
+	background: rgb(49, 21, 31);
+	color: white;
+}
+/* *****PROJECTS***** */
+.Projects {
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+	justify-content: center;
+	margin-bottom: -20px;
+}
+.Projects .Project {
+    position: relative;
+	width: 24vw;
+    height: 47vh;
+    background: rgb(75, 32, 46);
+	border: 2px solid rgb(75, 32, 46);
+    border-radius: 8px;
+	margin: 0 10px;
+	margin-bottom: 20px;
+	margin: 0 15px 30px;
+}
+.Projects .Project .desc{
+    color: lightgray;
+    font-size: small;
+    font-weight: lighter;
+    text-align: center;
+    /* padding: 7px; */
+    margin: 4px;
+    display: block;
+    /* width: 600px; */
+    /* margin-left: 10px; */
+    /* justify-content: center; */
+}
+/* .Projects .Project .detailsbtn{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: rgb(75, 32, 46);
+    border-radius: 4px;
+    justify-content: center;
+    padding: 4px 8px;
+    /* display: inline-block; */
+/* ) */
+.Projects .Project .detailsbtn .learn-more{
+    width: 1vw;
+    filter: invert(100%);    
+
+}
+.Projects .Project p {
+	font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+.Projects .Project .Banner {
+    border-radius: 8px;
+    height: 150px;
+    width: 100%;
+    display: block;
+}
+.Projects .Project img {
+	width: 100%;   
+}
+.Projects .Project .flex img {
+	width: 100%; 
+    filter: invert(100%);    
+}
+.Projects .Project .Content {
+	background: rgb(75, 32, 46);
+	padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.Projects .Project .Content img {
+	margin-left: 10px;
+	width: 20px;
+    transition: 150ms ease-in-out;
+}
+.Projects .Project .Content img:hover {
+    width: 25px;    
+}
+
+
+/* *****FOOTER***** */
+footer {
+    background-color: rgb(19, 1, 19);
+    height: 233px;
+    margin-top: 50px;
+}
+
+.Footer {
+    padding: 25px 122px;
+}
+.Footer .FooterFourth{
+    margin: 160px auto 0;
+    justify-items: center;
+    text-align: center;
+}
+/* *****CONTACT CARD***** */
+.Backside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 80vh;
+    background-image:linear-gradient(120deg, purple, pink);
+    margin: 25px auto;
+
+}
+.Backside .Card{
+    align-items: center;
+    left: calc(25%);
+    top: calc(15%);
+    width: 600px;
+    height: 320px;
+    padding: 16px;
+    background-color: azure;
+    border-radius: 8px;
+    color: black;   
+    display: flex;
+    flex-wrap: wrap;
+}
+.Backside .Card h2{
+    margin-bottom: 20px;
+}
+.Backside .Card .Profile{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: rgb(32, 72, 118);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Backside .Card .Profile img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+.Backside .Card .Context{
+    margin: auto;
+}
+.Backside .Card .Context ul{
+    margin-top: 20px;
+    width: 130px;
+    justify-content: space-between;
+    list-style-type: none;
+    display: flex;
+}
+.Backside .Card .Context img{
+    width: 30px;
+}
+.Backside .Card .Contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    padding: 4px 0;
+    border-radius: 4px;
+    background-color: lightgray;
+}
+.Backside .Card .Contacts .Addon {
+    display: flex;
+    height: 40px;
+    width: 300px;
+    font-size: 0.9rem;
+    align-items: center;
+}
+.Backside .Card .Contacts img{
+    width: 30px;
+    margin: 0 10px;
+}

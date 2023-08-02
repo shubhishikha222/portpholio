@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shikha Chourey - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="left">
+                <h4>Shikha's Portfolio</h4>
+            </div>
+            <div class="right" id="menu">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#SecondSection">About</a></li>
+                    <li><a href="https://dev.to/imhrishikesh7">Blogs</a></li>
+                    <li><a href="#fourthSection">Projects</a></li>
+                    <li><a href="contactcard.html">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="FirstSection" id="firstSection">
+            <div class="LeftSection">
+                Hi! it's me <span class="Text-Pink">Shikha</span>,
+                <div>I am a Passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="RightSection">
+                <img src="./assets/profile.JPG">
+            </div>
+        </section>
+
+        <section class="SecondSection" id="SecondSection">
+            <hr>
+            <span class="Text-grey">
+                Educational and Professional Details About Me
+            </span>
+            <h1>About Me</h1>
+            <div class="About-Section">
+                <p>
+                    I am a web developer, a graphic designer, tech enthusiast. I am the kind of person who is always ready to code even I have not slept for days or in any circumstances. I have been working on web development for the past 6 months and have a strong grip on my skills as well as always keen to learn new concepts in tech field.
+                </p>
+                <a class="Text-Pink" href="https://drive.google.com/file/d/1U3KKeS1P4N6RfiZv-yoevusJFTAo0fUS/view?usp=sharing">Download Resume</a>
+            </div>
+            <span class="Text-grey">
+                What I've studied so far
+            </span>
+            <h1>Education</h1>
+            <div class="Edu-Bar">
+                <h3>Masters</h3>
+                <p>I am pusuing my MBA in IT in Narseemunjee university,
+                    Mumbai in 2024</p>
+            </div>
+            <div class="Edu-Bar">
+                <h3>Graduation</h3>
+                <p>I've completed my Bsc in Biology from Barkatullah university,
+                    Bhopal in 2020</p>
+                <a class="Text-Pink" href="https://drive.google.com/file/d/1ACnR0AyGdA_XconneTsXCuTakPNIPyFI/view?usp=sharing">Download Marksheet</a>
+            </div>
+            <div class="Edu-Bar">
+                <h3>Diploma</h3>
+                <p>I've completed my Diploma in medical lab technician from Aurbindo medical college, Indore in 2020 with
+                    63.81%</p>
+                <a class="Text-Pink" href="https://drive.google.com/file/d/1SKHs_Z3fu3pYdSqYcbguVXH0Z259lihW/view?usp=sharing">Download Marksheet</a>
+            </div>
+
+        </section>
+        <section class="ThirdSection">
+            <hr>
+            <span class="Text-grey">
+                Below are the domains in which I'm profoundly skilled and ready to work
+            </span>
+            <h2>My Skills</h2>
+            <h3 class="SkillsHead">Languages and Tools</h3>
+            <div class="SkillsDiv">
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Javascript</li>
+                    <li>React Js</li>
+                </ul>
+                <ul>
+                    <li>Git and Github</li>
+                    <li>Node Js</li>
+                    <li>SQL</li>
+                    <li>Mongo DB</li>
+                </ul>
+            </div>
+        </section>
+        <section class="FourthSection" id="fourthSection">
+            <hr>
+            <span class="Text-grey">
+                Below are the projects which I have Developed
+            </span>
+            <h2>My Projects</h2>
+            <div class="Container">
+                <ul class="Filters" id="filters">
+                    <li class="active" id="all">All</li>
+                    <li id="html">HTML</li>
+                    <li id="css">CSS</li>
+                    <li id="js">JS</li>
+                    <li id="react">React JS</li>
+                    <li id="illustrations">Illustrations</li>
+                </ul>
+                <div class="Projects" id="projects">
+
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="Footer Flex">
+            <div class="FooterFourth">
+                 Shikha Chourey &#169; All Rights Reserved - <span id="year">1996</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Graphic Designer.', 'Vector Artist.', 'Lerner.'],
+            typeSpeed: 50,
+        });
+        </script>
+        <script src="app.js"></script>
+</body>
+
+</html>
